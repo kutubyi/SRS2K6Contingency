@@ -1,8 +1,8 @@
 # SRS2K6Contingency
 
 Analysis code for a study of how social responsiveness (SRS-2) and psychological
-distress (K6) relate to listener responses such as nods and verbal backchannels in 
-online psychiatrist-led CBT-style interviews.
+distress (K6) relate to listener responses in online psychiatrist-led CBT-style 
+interviews.
 
 ## Data preprocessing
 
