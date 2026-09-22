@@ -4,6 +4,13 @@ Analysis code for a study of how social responsiveness (SRS-2) and psychological
 distress (K6) relate to listener responses in online psychiatrist-led CBT-style 
 interviews.
 
+## Project context
+
+This study provides the empirical basis for
+[SRS2K6VirtualClient](https://github.com/kutubyi/SRS2K6VirtualClient), which
+builds a virtual client for clinical communication training whose nonverbal
+behavior is generated from a profile of SRS-2 and K6.
+
 ## Data preprocessing
 
 ### Recordings
@@ -12,13 +19,13 @@ Sixty-two adults completed a semi-structured online interview with the same
 CBT-trained psychiatrist, who was blind to their questionnaire scores. Sessions
 were recorded in Zoom's gallery view (1280 × 720 pixels, constant 25 frames per
 second, H.264 video, AAC audio at 48 kHz). The layout was identical in every
-recording: two 640 × 360-pixel tiles at the vertical centre of the frame, the
+recording: two 640 × 360-pixel tiles at the vertical center of the frame, the
 psychiatrist on the left and the participant on the right. Audio was a single
 mixed track (the two stereo channels were identical), so speech was attributed
 to speakers computationally (see *Speech activity*). For the first cohort
 (sessions in December 2025 and January 2026, n = 36), the recordings had been
 trimmed by 0.7-4.1 s at the start before transcription; these trimmed files were
-analysed so that video, audio and transcripts share one clock. The remaining
+analyzed so that video, audio and transcripts share one clock. The remaining
 recordings (n = 26) are unedited. Mean session length was 11.3 min (range
 3.9-16.1). Each video was matched to its booked session slot using the
 reservation records and, for unedited files, the recording timestamp.
@@ -52,7 +59,7 @@ OpenFace's confidence was below 0.8 were treated as missing. Gaps of up to
 three frames (120 ms) were filled by linear interpolation; longer gaps were
 left missing and flagged, so that no head movement was imputed across them.
 Head pitch velocity (°/s) was computed by differentiating pitch after
-zero-phase low-pass filtering (second-order Butterworth, 6 Hz cut-off) within
+zero-phase low-pass filtering (second-order Butterworth, 6 Hz cutoff) within
 each unbroken stretch of tracking. Camera stability was checked by estimating
 the frame-to-frame shift of the outer 15% of each tile (phase correlation at
 5 Hz), since a moving camera shifts the background whereas head movement does
@@ -76,11 +83,11 @@ Because both voices share one track, speech was attributed to speakers with a
 classifier trained separately for each session, without manual labels.
 Speaker embeddings (ECAPA-TDNN, SpeechBrain `spkrec-ecapa-voxceleb`;
 Desplanques et al., 2020; Ravanelli et al., 2021) were computed on 0.8-s
-windows every 0.2 s wherever the centre frame contained sound. Training labels
+windows every 0.2 s wherever the center frame contained sound. Training labels
 came from the video: mouth activity was quantified per person as the
 frame-to-frame change in lip parting plus jaw drop (OpenFace AU25 + AU26),
 averaged over 0.4 s, and windows in the top and bottom quarters of the log
-ratio of the psychiatrist's to the participant's mouth activity were labelled
+ratio of the psychiatrist's to the participant's mouth activity were labeled
 as psychiatrist and participant speech respectively. A logistic regression on
 the embeddings, trained on these windows, gave a per-window probability that
 the psychiatrist was speaking, which was averaged over all windows covering a
@@ -123,13 +130,13 @@ review.]
 ### Sample and exclusions
 
 Exclusion rules were fixed before questionnaire scores were linked to
-behaviour. A session was included in analyses of participant behaviour if the
+behavior. A session was included in analyses of participant behavior if the
 participant's face was tracked in at least 90% of the frames in which the
 psychiatrist was speaking, the periods in which participants listen and
 respond. Of the 62 sessions, 61 met this criterion (minimum 93.2%). In one
 session the participant's camera faced a strong light source and the face was
 tracked in 0.8% of frames; this session was excluded from all analyses of
-participant behaviour, and speaker attribution, which requires both faces, was
+participant behavior, and speaker attribution, which requires both faces, was
 not computed for it. In four sessions the participant's camera moved during
 5-20% of the session; frames with camera movement are excluded from analyses
 of head movement, but the sessions are retained. Participants with fewer than
