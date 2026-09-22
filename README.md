@@ -17,27 +17,27 @@ psychiatrist on the left and the participant on the right. Audio was a single
 mixed track (the two stereo channels were identical), so speech was attributed
 to speakers computationally (see *Speech activity*). For the first cohort
 (sessions in December 2025 and January 2026, n = 36), the recordings had been
-trimmed by 0.7–4.1 s at the start before transcription; these trimmed files were
+trimmed by 0.7-4.1 s at the start before transcription; these trimmed files were
 analysed so that video, audio and transcripts share one clock. The remaining
 recordings (n = 26) are unedited. Mean session length was 11.3 min (range
-3.9–16.1). Each video was matched to its booked session slot using the
+3.9-16.1). Each video was matched to its booked session slot using the
 reservation records and, for unedited files, the recording timestamp.
 
 ### Questionnaires
 
 The SRS-2 Adult Self-Report (65 items; Constantino & Gruber, 2012) was
 administered online in Japanese. Responses (1 = not true to 4 = almost always
-true) were scored 0–3, giving a raw total of 0–195, the five treatment
+true) were scored 0-3, giving a raw total of 0-195, the five treatment
 subscales (Social Awareness, 8 items; Social Cognition, 12; Social
 Communication, 22; Social Motivation, 11; Restricted Interests and Repetitive
 Behavior, 12) and Social Communication and Interaction (the first four combined).
 Of the 17 items reverse-scored in the standard key, items 52 and 55 are worded
 as difficulties rather than skills in the Japanese form administered here, and
-both correlated positively with the rest of the scale (corrected item–total
+both correlated positively with the rest of the scale (corrected item-total
 r = .43 and .47 across all 107 identifiable questionnaire submissions); they
 were therefore scored without reversal (15 reversed items). Totals under the standard 17-item key are reported as a sensitivity
 check. Psychological distress was measured with the Japanese K6 (Kessler et al.,
-2002; Furukawa et al., 2008; six items scored 0–4, total 0–24). Fifteen
+2002; Furukawa et al., 2008; six items scored 0-4, total 0-24). Fifteen
 participants submitted the questionnaire twice (typically at screening and
 again before the session); the latest submission on or before the session day
 was used.
@@ -61,7 +61,7 @@ session (minimum 97.8%; median time in long gaps 0.5 s). The participant's face
 was usable in a median of 99.7% of frames (minimum 93.9%; median time in long
 gaps 1.5 s, maximum 29.5 s) in 61 of 62 sessions; in the remaining session the
 face was tracked in 0.8% of frames (see *Sample and exclusions*). The
-participant's camera moved during 5–20% of four sessions; these frames are
+participant's camera moved during 5-20% of four sessions; these frames are
 flagged.
 
 ### Speech activity and speaker attribution
@@ -86,7 +86,7 @@ the embeddings, trained on these windows, gave a per-window probability that
 the psychiatrist was speaking, which was averaged over all windows covering a
 frame. Agreement between voice-based and face-based labels, assessed with
 five-fold cross-validation, had a median of .978 across sessions (interquartile
-range .960–.984, range .900–.997; 61 sessions, as the method requires both
+range .960-.984, range .900-.997; 61 sessions, as the method requires both
 faces). A
 frame with sound was assigned to the psychiatrist when this probability was at
 least .5 and to the participant otherwise; it was assigned to both (overlap)
@@ -131,7 +131,7 @@ session the participant's camera faced a strong light source and the face was
 tracked in 0.8% of frames; this session was excluded from all analyses of
 participant behaviour, and speaker attribution, which requires both faces, was
 not computed for it. In four sessions the participant's camera moved during
-5–20% of the session; frames with camera movement are excluded from analyses
+5-20% of the session; frames with camera movement are excluded from analyses
 of head movement, but the sessions are retained. Participants with fewer than
 20 listening opportunities for the primary cue are excluded at the analysis
 stage.
@@ -153,17 +153,17 @@ OpenCV 4.13.0, PyTorch 2.5.1, SpeechBrain 1.1.1 and silero-vad 6.2.3; ffmpeg
 
 ### References
 
-- Baltrušaitis, T., Zadeh, A., Lim, Y. C., & Morency, L.-P. (2018). OpenFace 2.0: Facial behavior analysis toolkit. *IEEE International Conference on Automatic Face & Gesture Recognition*, 59–66.
+- Baltrušaitis, T., Zadeh, A., Lim, Y. C., & Morency, L.-P. (2018). OpenFace 2.0: Facial behavior analysis toolkit. *IEEE International Conference on Automatic Face & Gesture Recognition*, 59-66.
 - Beck, J. S. (2021). *Cognitive behavior therapy: Basics and beyond* (3rd ed.). Guilford Press.
 - Constantino, J. N., & Gruber, C. P. (2012). *Social Responsiveness Scale, Second Edition (SRS-2): Manual*. Western Psychological Services.
-- Desplanques, B., Thienpondt, J., & Demuynck, K. (2020). ECAPA-TDNN: Emphasized channel attention, propagation and aggregation in TDNN based speaker verification. *Interspeech 2020*, 3830–3834.
-- Furukawa, T. A., Kawakami, N., Saitoh, M., et al. (2008). The performance of the Japanese version of the K6 and K10 in the World Mental Health Survey Japan. *International Journal of Methods in Psychiatric Research, 17*(3), 152–158.
-- Kessler, R. C., Andrews, G., Colpe, L. J., et al. (2002). Short screening scales to monitor population prevalences and trends in non-specific psychological distress. *Psychological Medicine, 32*(6), 959–976.
-- Maciejewski, M., Wichern, G., McQuinn, E., & Le Roux, J. (2020). WHAMR!: Noisy and reverberant single-channel speech separation. *ICASSP 2020*, 696–700.
+- Desplanques, B., Thienpondt, J., & Demuynck, K. (2020). ECAPA-TDNN: Emphasized channel attention, propagation and aggregation in TDNN based speaker verification. *Interspeech 2020*, 3830-3834.
+- Furukawa, T. A., Kawakami, N., Saitoh, M., et al. (2008). The performance of the Japanese version of the K6 and K10 in the World Mental Health Survey Japan. *International Journal of Methods in Psychiatric Research, 17*(3), 152-158.
+- Kessler, R. C., Andrews, G., Colpe, L. J., et al. (2002). Short screening scales to monitor population prevalences and trends in non-specific psychological distress. *Psychological Medicine, 32*(6), 959-976.
+- Maciejewski, M., Wichern, G., McQuinn, E., & Le Roux, J. (2020). WHAMR!: Noisy and reverberant single-channel speech separation. *ICASSP 2020*, 696-700.
 - Ministry of Health, Labour and Welfare (2010). うつ病の認知療法・認知行動療法 治療者用マニュアル.
 - Ravanelli, M., Parcollet, T., Plantinga, P., et al. (2021). SpeechBrain: A general-purpose speech toolkit. *arXiv:2106.04624*.
 - Silero Team (2024). Silero VAD: Pre-trained enterprise-grade voice activity detector. https://github.com/snakers4/silero-vad
-- Subakan, C., Ravanelli, M., Cornell, S., Bronzi, M., & Zhong, J. (2021). Attention is all you need in speech separation. *ICASSP 2021*, 21–25.
+- Subakan, C., Ravanelli, M., Cornell, S., Bronzi, M., & Zhong, J. (2021). Attention is all you need in speech separation. *ICASSP 2021*, 21-25.
 
 ## Running the preprocessing
 
