@@ -1,8 +1,8 @@
 # SRS2K6Contingency
 
 Analysis code for a study of how social responsiveness (SRS-2) and psychological
-distress (K6) relate to moment-to-moment listener responses (nods and verbal
-backchannels) in online, psychiatrist-led check-in interviews.
+distress (K6) relate to listener responses (nods and verbal backchannels) in online 
+psychiatrist-led CBT-style interviews.
 
 ## Data preprocessing
 
@@ -59,11 +59,10 @@ the frame-to-frame shift of the outer 15% of each tile (phase correlation at
 not. The psychiatrist's face was usable in a median of 99.9% of frames per
 session (minimum 97.8%; median time in long gaps 0.5 s). The participant's face
 was usable in a median of 99.7% of frames (minimum 93.9%; median time in long
-gaps 1.5 s, maximum 29.5 s) in 61 of 62 sessions; in one session the
-participant's camera faced a strong light source and the face was tracked in
-0.8% of frames, so that session was excluded from participant-side visual
-measures. The participant's camera moved in 5–20% of the session in four
-sessions; these frames are flagged.
+gaps 1.5 s, maximum 29.5 s) in 61 of 62 sessions; in the remaining session the
+face was tracked in 0.8% of frames (see *Sample and exclusions*). The
+participant's camera moved during 5–20% of four sessions; these frames are
+flagged.
 
 ### Speech activity and speaker attribution
 
@@ -121,9 +120,25 @@ boundary was then checked and corrected by a researcher
 reading the transcript. [Number of corrected boundaries to be filled in after
 review.]
 
+### Sample and exclusions
+
+Exclusion rules were fixed before questionnaire scores were linked to
+behaviour. A session was included in analyses of participant behaviour if the
+participant's face was tracked in at least 90% of the frames in which the
+psychiatrist was speaking, the periods in which participants listen and
+respond. Of the 62 sessions, 61 met this criterion (minimum 93.2%). In one
+session the participant's camera faced a strong light source and the face was
+tracked in 0.8% of frames; this session was excluded from all analyses of
+participant behaviour, and speaker attribution, which requires both faces, was
+not computed for it. In four sessions the participant's camera moved during
+5–20% of the session; frames with camera movement are excluded from analyses
+of head movement, but the sessions are retained. Participants with fewer than
+20 listening opportunities for the primary cue are excluded at the analysis
+stage.
+
 ### State tables
 
-For each session, all signals were combined into one table with a row per video
+For each of the 61 sessions, all signals were combined into one table with a row per video
 frame (25 Hz) on the original recording clock: both people's head rotation,
 pitch velocity, facial action units and gaze, tracking confidence and gap
 flags; sound, speaker attribution and separated-voice levels; the conversational
