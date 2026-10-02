@@ -17,18 +17,14 @@ behavior is generated from a profile of SRS-2 and K6.
 
 Sixty-two adults completed a semi-structured online interview with the same
 CBT-trained psychiatrist, who was blind to their questionnaire scores. Sessions
-were recorded in Zoom's gallery view (1280 × 720 pixels, constant 25 frames per
+were recorded in Zoom's gallery view (1280 × 720 pixels, 25 frames per
 second, H.264 video, AAC audio at 48 kHz). The layout was identical in every
 recording: two 640 × 360-pixel tiles at the vertical center of the frame, the
 psychiatrist on the left and the participant on the right. Audio was a single
-mixed track (the two stereo channels were identical), so speech was attributed
-to speakers computationally (see *Speech activity*). For the first cohort
-(sessions in December 2025 and January 2026, n = 36), the recordings had been
-trimmed by 0.7-4.1 s at the start before transcription; these trimmed files were
-analyzed so that video, audio and transcripts share one clock. The remaining
-recordings (n = 26) are unedited. Mean session length was 11.3 min (range
+mixed track (the two stereo channels were identical); speech was attributed
+to speakers computationally (see *Speech activity*).  Mean session length was 11.3 min (range
 3.9-16.1). Each video was matched to its booked session slot using the
-reservation records and, for unedited files, the recording timestamp.
+reservation records and the recording timestamp.
 
 ### Questionnaires
 
